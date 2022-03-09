@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+        </style>
+    <head>
+    <title>Atlyginimo skaičiuoklė</title>
+</head>
+<body>
+   <h2>Atlyginimo skaičiuoklė 2022 metams</h2>
+   <h3>Atlyginimo dydis ant popieriaus: <input id='atlyginimas'></h3>
+   <h3>Ar skaičiuoti NPD?</h3> 
+   <div>
+   <input type="checkbox" id="checke"> <label>Taip</label>
+</div>
+       <table>
+       <h3>NPD: <span id='npd'></span></h3>
+       <h3>Darbuotojo mokesčiai</h3>
+       <tr>
+           <th>GPM 20%</th>
+           <th><span id='gpm'></span></th>
+       </tr>
+       <tr>
+        <th>PSD 6.98%</th>
+        <th><span id='psd'></span></th>
+        </tr>
+        <tr>
+            <th>VSD 12.52%</th>
+            <th><span id='vsd'></span></th>
+        </tr>
+   </table>
+   <table>
+       <h3>Darbdavio sumokami mokesčiai: <span id='darbd'></span></h3>
+       <tr>
+        <th>Sodra 1.77%</th>
+        <th><span id='sodra'></span></th>
+        </tr>
+       <h3>Viso darbo vietos kaina: <span id='total'></span></h3>
+   </table>
+   <h3>Atlyginimas atskaičius mokesčius: <span id='alga'></span></h3>
+   <button onclick="calc()">Skaičiuoti</button>
+   <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
